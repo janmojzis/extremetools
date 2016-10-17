@@ -1,0 +1,27 @@
+.TH extremeenvuidgid 8
+.SH NAME
+extremeenvuidgid \- runs program with environment variables indicating unique (extreme) uid and gid
+.SH SYNOPSIS
+.B extremeenvuidgid
+[ options ]
+.I program
+.SH OPTIONS
+.TP
+.B \-b
+baseid (default 141500000)
+.SH DESCRIPTION
+.B extremeenvuidgid
+runs
+.I program
+and sets env. variables $UID and $GID to unique (extreme) uid and gid and 
+The uid and gid is derived from
+.I baseid
+and process id.
+.SH EXAMPLES
+extremeenvuidgid printenv UID
+.br
+extremeenvuidgid printenv GID
+.SH SEE ALSO
+extremesetuidgid(8),
+setuidgid(8),
+envuidgid(8)

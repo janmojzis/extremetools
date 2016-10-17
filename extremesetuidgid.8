@@ -1,0 +1,27 @@
+.TH extremesetuidgid 8
+.SH NAME
+extremesetuidgid \- runs program under unique (extreme) uid and gid.
+.SH SYNOPSIS
+.B extremesetuidgid
+[ options ]
+.I program
+.SH OPTIONS
+.TP
+.B \-b
+baseid (default 141500000)
+.SH DESCRIPTION
+.B extremesetuidgid
+runs
+.I program
+under unique (extreme) uid and gid.
+The uid and gid is derived from
+.I baseid
+and process id.
+.SH EXAMPLES
+extremesetuidgid id \-u
+.br
+extremesetuidgid id \-g
+.SH SEE ALSO
+extremeenvuidgid(8),
+setuidgid(8),
+envuidgid(8)
