@@ -11,7 +11,7 @@ Public domain.
 #include "e.h"
 #include "die.h"
 
-#define USAGE "usage: extremesetuidgid [options] program\n"
+#define USAGE "extremesetuidgid: usage: extremesetuidgid [options] program\n"
 #define FATAL "extremesetuidgid: fatal: "
 
 static void die_usage(void) {
